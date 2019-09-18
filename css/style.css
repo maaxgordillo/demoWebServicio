@@ -1,0 +1,480 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+}
+h1, h2, h3{
+    font-family: 'Oswald', sans-serif;
+}
+h1{ font-size: 3.4rem;}
+h2{ font-size: 3rem;}
+h3{ font-size: 3.6rem;}
+h4 {font-size: 2.3rem;}
+
+/*Globales*/
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto;
+}
+
+.boton a{
+    color: white; /*color de fuente*/
+    font-weight: 700; /*grosor de fuente*/
+    text-decoration: none; /*ninguna decoracion de texto*/
+    font-size:2rem; /*tamaño de fuente*/
+    padding: 1rem 3rem; 
+    text-align: center; /*alineacion al centro*/
+    margin-top:3rem; /*separacion de arriba*/
+    display: inline-block; /*display*/
+    display: block;
+    flex: 0 0 auto;
+    text-transform: uppercase;
+    max-height: 7rem;
+    max-width: 20rem;
+}
+.boton-gris{
+    background-color: black;
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+}
+.boton-negro{
+    background-color: black;
+    
+}
+.boton-contacto{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border: none;
+    width: 14rem;
+}
+.boton a:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+.boton-contacto:hover{
+    cursor: pointer;
+}
+/*Utilidades*/
+.no-margin{
+    margin:0;
+}
+.fw-300{
+    font-weight: 300;}
+.fw-700{
+    font-weight: 700;}
+.font-b{
+    color:white;}
+.centrar{
+    text-align: center;
+}   
+
+/*Header*/
+.site-header{
+    background-image: url(../img/fondo2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 110rem;
+    width: 100%;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.barra h1, a{
+    color: white;
+    margin:0;
+    text-decoration: none;
+}
+.barra a{
+    font-family: 'Oswald', sans-serif;
+    font-size:2.4rem;
+    margin-right: 1.8rem;  
+}
+.barra a:last-of-type{
+    margin:0;
+}
+.barra a:hover{
+    color: grey;
+}
+.contenido-header h2{
+    padding-top: 35rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px black;
+}
+.contenido-header p{
+    padding-top: 2.8rem;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.contenido-header p{
+        text-shadow: 2px 2px 2px black;
+}
+
+/*Contenido principal*/
+
+.contenido-principal h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 4.3rem;
+    padding-top: 3rem;
+}
+
+/*Articulos*/
+.articulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.articulo .imagen img{
+max-height: 34rem;
+max-width: 52em;
+}
+
+.articulo .texto-articulo h3{
+    font-size: 3rem;
+    margin-bottom:4.3rem;
+    margin-top:5rem;
+}
+.articulo li{
+    font-size: 2rem;
+    line-height: 2.2;
+}
+.articulo li:last-of-type{
+    margin-bottom:7rem;
+}
+article{
+    border-bottom: solid 1px grey;
+}
+article:last-of-type{
+    border-bottom: none;
+    margin-bottom: 7rem;
+}
+/*Sección*/
+.contenido-seccion{
+    background-image: url(../img/banner3.jpg);
+    background-position: center center;
+    background-size:cover;
+    width: 100%;
+    height: 50rem;
+}
+.contenido-seccion a{
+ margin-left: 80rem;
+}
+.texto-seccion{
+    padding-top: 10rem;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 0.5px 0.5px 0.5px black;
+}
+.texto-seccion h3{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.texto-seccion p{
+    font-size: 2.4rem;
+    margin-bottom:5rem;
+}
+.site-footer{
+    background-color: black;
+    padding-bottom: 3rem;
+    margin-top: 7rem;
+    margin: 0;
+}
+.site-footer p{
+    color:white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+/**PAGINAS INTERNAS**/
+.encabezado-seg{
+    background-image: url(../img/seguridad2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+    width: 100%;
+}
+.text-seg h2{
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    font-size: 4.4rem;
+    padding-top:15rem;
+}
+.text-seg p{
+    color:white;
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px black;
+}
+.barra-top{
+    background-color: black;
+    padding-bottom: 3rem;
+}
+.contenido-seguridad h2{
+    font-size:4rem;
+    margin-top: 7rem;
+}
+.contenido-seguridad h3{
+    font-size: 3.2rem;
+}
+/*
+.contenido-seguridad h3::after{
+    content: '';
+    display: block;
+    background-color: black;
+    margin-top: 2rem;
+    height: 0.4rem;
+    width: 10rem;
+}
+*/
+.contenido-seguridad h3{
+    margin-top: 6rem;
+}
+.contenido-seguridad p{
+    font-size: 1.8rem;
+    margin-bottom:3rem;
+}
+.contenido-seguridad span{
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-left: 43rem;
+    padding: 5rem;
+}
+.imagenes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imagenes img{
+    height: 55rem;
+    width: 55rem;
+    margin-bottom: 8rem;
+}
+.anuncio{
+    border-bottom: solid 0.4px grey;
+}
+/**Refrigeracion**/
+.contenido-refrigeracion{
+    background-image: url(../img/banner5.jpg);
+    background-size:cover;
+    background-position: center center;
+    height: 60rem;
+    width: 100%;
+}
+.texto-refrigeracion h2{
+    font-size: 4.4rem;
+    padding-top: 16rem;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    padding-bottom:3.3rem;
+}
+.texto-refrigeracion p{
+    font-size: 2.6rem;
+    color: white;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+.titulo-refri{
+    margin-top:6rem;
+    font-size: 3rem;
+}
+.experiencia{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.experiencia-refri{
+    border: solid 1px #b5b5b5;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    flex-shrink: 0;
+    flex: 0 0 calc(33.3% - 1rem);
+    margin-bottom: 6rem;
+}
+.experiencia-refri img{
+    height: 30rem;
+    width: 45rem;
+}
+.experiencia-refri p{
+    font-size: 1.6rem;
+    max-width: 45rem;
+}
+.experiencia-refri a{
+    align-content: right;
+}
+
+/*Pagina de electricidad*/
+
+.contenido-electricidad{
+  background-image: url(../img/electricidad.jpg);
+  background-position: center top;
+  background-size: cover;
+  width: 100%;
+  height: 60rem;  
+}
+.texto-electricidad{
+    padding-top: 16rem;
+    text-shadow: 2px 2px 2px black;
+}
+.texto-electricidad h2{
+    text-align: center;
+    color: white;
+    font-size: 4.4rem;
+}
+.texto-electricidad p{
+    font-size: 2.6rem;
+    text-align: center;
+    color: #ffffff;
+}
+.electricidad h3{
+    font-size: 4rem;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom:0;
+}
+.electricidad-texto h3{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size:2.8rem;
+    text-align: left;
+    margin-top: 0;
+    padding-bottom: 3rem;
+}
+.electricidad-cont{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.electricidad-texto h3::after{
+    content: '';
+    display: block;
+    background-color: black;
+    width: 41rem;
+    height:0.8rem;
+    margin-top: 2rem;
+}
+.electricidad-texto li{
+    font-size:2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.electricidad-cont img{
+    width: 50rem;
+    height: 30rem;
+    margin-top:7rem;
+}
+.electricidad{
+    border-bottom: 0.8px solid grey;
+}
+.electricidad .boton{
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+}
+/*Pagina contacto*/
+.contacto{
+    background-image: url(../img/contacto1.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 160rem;
+}
+.contacto h2{
+    font-size:4.4rem;
+    text-align: center;
+    color:white;
+    margin-top: 0;
+    text-shadow: 2px 2px 2px black;
+    padding-top: 10rem;
+    margin-bottom: 8rem;
+}
+form .campo{
+    max-width: 100rem;
+    padding-left:20rem;
+}
+.campo{
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 2.4rem;
+    margin-bottom:1.5rem;
+}
+
+
+.formulario-contacto{
+    flex-wrap: wrap;
+}
+.formulario-contacto .campo{
+    display: flex;
+    justify-content: space-between;
+}
+.formulario-contacto .campo label{
+    flex: 0 0 11rem;
+    padding-top:0.8rem;
+}
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+    flex:1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+.formulario-contacto textarea{
+    height: 15rem;
+}
+.formulario-contacto .enviar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:3rem;
+}
+/*Horarios*/
+.horarios h2{
+    margin-bottom:3rem;
+    padding-top: 15rem;
+}
+.horarios li{
+    color:white;
+    font-size:2.4rem;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    margin-bottom:1.5rem;
+}
+.horarios li span{
+    font-weight: 700;
+}
+.iconos{
+    display:flex;
+    flex-basis: calc(33.3% + 5rem);
+    align-items: center;
+    margin-top: 10rem;
+}
+.imagen-icono img{
+    flex: 0 0 10rem;
+    height: 8rem;
+    width: 8rem;
+    margin-left: 5rem;
+}
+.texto-icono p{
+    color:white;
+    font-size:2.8rem;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 2.5rem;
+    margin-right: 5rem;
+    max-width: 30rem;
+
+}
+    
